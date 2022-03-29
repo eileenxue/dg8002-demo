@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+
+header {
+  padding: 3rem;
+  border-bottom: 4px solid limegreen;
+}
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+}
+
+h1::before {
+  content: '👾';
+  font-size: 3rem;
+  padding-right: 1rem;
+  display: inline-block;
+  animation: jump 1s infinite alternate;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+main {
+  font-family: 'Ubuntu Mono', monospace;
+  padding: 3rem;
+}
+
+section {
+  padding-bottom: 1rem;
+}
+
+article {
+  border: 2px dashed limegreen;
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+#newsletter-form {
+  background-color: limegreen;
+  color: black;
+  width: fit-content;
+  padding: 1rem;
+}
+
+#newsletter-form input {
+  font-family: 'Ubuntu Mono', sans-serif;
+  border: none;
+  padding: 0.5rem;
+  min-width: 300px;
+}
+
+#newsletter-form button {
+  background-color: blueviolet;
+  color: white;
+  font-size: 1rem;
+  font-family: 'Ubuntu Mono', sans-serif;
+  cursor: pointer;
+  padding: 0.4rem 0.6rem;
+}
+
+footer {
+  font-family: 'Press Start 2P', cursive;
+  padding: 1rem 2rem;
+  background-color: blueviolet;
+}
